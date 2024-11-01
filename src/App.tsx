@@ -47,7 +47,7 @@ const ToDo = () => {
         value={newToDo} 
         onChange={(e) => setNewToDo(e.target.value)}
       />
-      <button onClick={addToDo}>Add todo</button>
+      <button onClick={addToDo} style={{display: 'inline-flex', float:'right'}}>Add ToDo</button>
       <ul>
         {toDo.map((todo) => (
           <li key={todo.id}>
